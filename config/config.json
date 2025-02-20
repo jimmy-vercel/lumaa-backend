@@ -1,0 +1,26 @@
+{
+  "development": {
+    "host": "localhost",
+    "username": "postgres",
+    "password": "password",
+    "database": "lumaa",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "host": "localhost",
+    "username": "postgres",
+    "password": "password",
+    "database": "lumaa",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "host": "localhost",
+    "username": "postgres",
+    "password": "password",
+    "database": "lumaa",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
