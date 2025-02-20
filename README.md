@@ -27,8 +27,9 @@
     ```
     $ npm run dev
     ```
-  - Run the test server
+  - Run the tests with coverage
     ```
-    $ npm run test
+    $ npm run test        # run the tests
+    $ npm run test:watch  # run the tests in watch mode
     ```
     
