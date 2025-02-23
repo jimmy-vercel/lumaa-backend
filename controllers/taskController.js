@@ -2,7 +2,10 @@ const { Task } = require('../models');
 
 const getTasks = async (req, res) => {
   try {
-    const tasks = await Task.findAll({ where: { userId: req.userId } });
+    const tasks = await Task.findAll({
+      where: { userId: req.userId },
+      order: [['updatedAt', 'DESC']],
+    });
     res.json(tasks);
   } catch (error) {
     res.status(500).json({ error: error.message });
