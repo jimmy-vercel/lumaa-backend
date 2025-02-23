@@ -1,13 +1,5 @@
 # Backend setup
 
-- Install the dependencies
-  ```
-  $ npm install
-  ```
-- Generate the tables 'Users' and 'Tasks' if they don't exist.
-  ```
-  $ npx sequelize-cli db:migrate
-  ```
 - Create a database on your PostgreSQL command-line tool or use a GUI like pgAdmin.
   ```
   CREATE DATABASE lumaa;
@@ -22,6 +14,14 @@
   DB_PORT=5432
   JWT_SECRET=YOUR_SECRET_KEY
   ```
+- Install the dependencies
+  ```
+  $ npm install
+  ```  
+- Generate the tables 'Users' and 'Tasks' if they don't exist.
+  ```
+  $ npx sequelize-cli db:migrate
+  ```
 - Run the servers on your local
   - Run the development server
     ```
@@ -32,4 +32,3 @@
     $ npm run test        # run the tests
     $ npm run test:watch  # run the tests in watch mode
     ```
-    
