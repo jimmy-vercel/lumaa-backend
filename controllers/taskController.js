@@ -14,8 +14,8 @@ const getTasks = async (req, res) => {
 
 const createTask = async (req, res) => {
   try {
-    const { title, description } = req.body;
-    const task = await Task.create({ title, description, userId: req.userId });
+    const { title, description, isComplete } = req.body;
+    const task = await Task.create({ title, description, isComplete, userId: req.userId });
     res.status(201).json(task);
   } catch (error) {
     res.status(400).json({ error: error.message });
